@@ -33,15 +33,13 @@ section img {
   background-image: linear-gradient(
       rgba(20, 20, 20, 0.5),
       rgba(20, 20, 20, 0.5)),
-      url(../img/default_wallpaper.jpg);
+      url(../img/settings-languages.png);
 }
 
-section.download .logo svg {
-  fill: white;
-  max-height: 80px;
+section.download .logo img {
+  max-height: 120px;
   height: auto;
   width: auto;
-  margin: 0 3rem;
 }
 
 img#rotate-on-scroll {
@@ -66,14 +64,4 @@ img#rotate-on-scroll {
     max-height: 300px;
   }
 
-}
-
-@include media-breakpoint-down(xs) {
-
-  .section-background-image {
-    background-image: linear-gradient(
-        rgba(20, 20, 20, 0.5),
-        rgba(20, 20, 20, 0.5)),
-        url(../img/default_wallpaper-xs.jpg);
-  }
 }

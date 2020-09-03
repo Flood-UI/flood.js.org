@@ -6,16 +6,16 @@ scrolljs: true
 <div class="jumbotron welcome">
   <div class="container">
     <div class="row justify-content-between align-items-bottom">
-      <div class="col-lg-5 text-center text-lg-left pb-10">
+      <div class="col-lg-5 text-center text-lg-left pb-10" style="align-self: center;">
 
         <h1>{{ site.description }}</h1>
-        <p>A free and open-source operating system for various devices, based on the Android mobile platform.</p>
-        <a class="btn btn-primary text-primary" href="https://download.lineageos.org/">
+        <p>A beautiful web UI for rTorrent.</p>
+        <a class="btn btn-primary text-primary" href="https://www.npmjs.com/flood">
           {% include svg/download.svg %} Download</a>
         <a class="btn btn-link text-white" href="{{ site.baseurl }}/blog">Blog</a>
 
       </div>
-      <img alt="Home" src="assets/img/peek_device.png" class="welcome-image">
+      <img alt="Home" src="assets/img/screenshot-desktop-expanded-dark.png" class="welcome-image">
     </div>
   </div>
 </div>
@@ -40,76 +40,18 @@ scrolljs: true
   <div class="container">
     <div class="row justify-content-between align-items-center">
 
-      <div id="tweaks" class="col-lg-4">
-        <img alt="styles" src="assets/img/styles.png" class="img-fluid text-center h-auto">
-      </div>
-
-      <div class="col-lg-7 text-center text-lg-left">
-        <h2>Individuality</h2>
-        <p class="feature">
-            Customization is paramount to productivity.
-            <br>
-            That’s why LineageOS promises to push for user personalization and preference.
-            <br>
-            <br>
-            Everyone is unique and your device should be too.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="security bg-dark">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-
-      <div class="col-lg-7 order-lg-last">
-        <img alt="security" src="assets/img/security.png" class="img-fluid text-center h-auto">
-      </div>
-
-      <div class="col-lg-4 text-center text-lg-left text-white">
-        <h2>Security</h2>
-        <p class="feature">
-          Your data, your rules. With powerful tools such as Privacy Guard,
-          you are in control of what your apps can do whenever you want.<br><br>
-        </p>
-        <div class="feature-inline-image">
-          {% include svg/trust.svg %}
-        </div>
-        <p>
-          Trust will help you understand the security of your device
-          and warn you about possible threats.
-        </p>
-        <br>
-        <p class="feature">
-          We take security very seriously: that’s why we deliver security
-          updates every month to all our supported devices.<br>
-          And to make your device more secure, lock everything behind an enhanced
-          lock screen.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="longevity">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-
       <div class="col-lg-6">
-        <img alt="longevity" src="assets/img/tweaks.png" class="img-fluid text-center" id="rotate-on-scroll">
+        <img alt="Screenshot mobile" src="assets/img/screenshot-mobile-expanded-dark.jpg" class="img-fluid text-center">
       </div>
 
       <div class="col-lg-5 text-center text-lg-left">
-        <h2>Longevity</h2>
+        <h2>Touch-Ready</h2>
         <p class="feature">
-          LineageOS extends the functionality and lifespan of mobile devices from
-          more than 20 different manufacturers thanks to our open-source community
-          of contributors from all around the world.<br><br>
-
-          Want to contribute? <a href="{{ site.baseurl }}/community">See how you can make LineageOS better</a>.
+          Flood supports touch screen devices.
+          <br><br>
+          Responsive. Collapsible sidebar.
+          <br><br>
+          Smooth, awesome experience on any device.
         </p>
       </div>
     </div>
@@ -120,25 +62,16 @@ scrolljs: true
   <div class="container">
     <div class="row justify-content-between align-items-center">
 
-      <div class="col-lg-7 order-lg-last">
-        <div class="img-fluid text-center">
-          {% include svg/apps.svg %}
-        </div>
-      </div>
-
       <div class="col-lg-4 text-center text-lg-left text-white">
-        <h2>Power to you</h2>
+        <h2>Localization</h2>
         <p class="feature">
-          Our open-source apps are here to help you get through the day.
+          20+ languages are supported.
           <br><br>
-          Want to do more with your device?
-          <br>
-          Power users will enjoy Unix command-line utilities.
-          <br>
-          Android developers will turn any device into the perfect device for
-          apps development thanks to enhanced tools and
-          <a href="https://wiki.lineageos.org/sdk">exclusive APIs</a>.
-          <br>
+          Flood detects your browser language preferences and automatically switches to your preferred language.
+          <br><br>
+          And, of course, you can still tell Flood to use a specific language.
+          <br><br>
+          Thanks to the integration with renowned translation management system <a href="https://crwd.in/flood">Crowdin</a>, it is easier than ever to <a href="https://crwd.in/flood">contribute your translations to Flood</a>.
         </p>
       </div>
 
@@ -150,18 +83,10 @@ scrolljs: true
   <div class="container">
     <div class="text-center">
       <div class="logo">
-        {% include svg/lineage_logo.svg %}
+        <img alt="Logo" src="assets/img/logo.png" class="download-logo-image">
       </div>
-      <h2>Ready? Get LineageOS now!</h2>
-      <p class="feature">
-        LineageOS, an open-source Android distribution, is available for several devices,
-        <br>
-        with more being continuously added thanks to the biggest, yet ever growing,
-        Android open-source community.
-        <br>
-        Join us and breathe new life in your device, be it old or new.
-      </p>
-      <a class="btn btn-primary" href="https://download.lineageos.org/">
+      <h2>Ready? Get Flood now!</h2>
+      <a class="btn btn-primary" href="https://www.npmjs.com/flood">
         {% include svg/download.svg %} Download
       </a>
     </div>

@@ -39,15 +39,14 @@
   height: 50px;
   font-size: 1.125rem;
   line-height: 30px;
-  padding: 14px 15px 6px;
 
   &:hover,
   &:focus {
     text-decoration: none;
   }
 
-  svg {
-    height: 20px;
+  img {
+    height: 50px;
     fill: $brand-primary;
   }
 

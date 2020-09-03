@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="shortcut icon" href="{{ site.baseurl }}/images/logo.png">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/logo.png">
 
   </head>
 
@@ -21,7 +21,7 @@
       <div class="container">
         <div class="navbar-translate">
           <a class="navbar-brand" href="{{ site.baseurl }}/">
-            {% include svg/lineage.svg %}
+            <img alt="Logo" src="{{ site.baseurl }}/assets/img/logo.png">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -35,17 +35,9 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ site.baseurl }}/blog/">Blog</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/engineering/">Engineering</a></li>
+              <a class="nav-link" href="https://github.com/jesec/flood">{% include svg/open_in_new.svg %} Sources</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/about/">About</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/community/">Community</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/legal/">Legal</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://status.lineageos.org">{% include svg/open_in_new.svg %} Status</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://wiki.lineageos.org">{% include svg/open_in_new.svg %} Wiki</a></li>
+              <a class="nav-link" href="https://github.com/jesec/flood/wiki">{% include svg/open_in_new.svg %} Wiki</a></li>
           </ul>
         </div>
       </div>
@@ -69,14 +61,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md footer-logo">
-            {% include svg/lineage_logo.svg %}
             <p class="footer-text">
-              <b>&copy; 2016 - {{ site.time | date: '%Y' }} The LineageOS Project </b><br />
-              Need to get in Contact? Check out <a target="_blank" href="https://www.reddit.com/r/LineageOS/">r/LineageOS!</a> <br />
-              Need a Press Kit? Get our <a target="_blank" href="https://docs.google.com/presentation/d/1VmxFrVqkjtNMjZbAcrC4egp8C_So7gjJR3KuxdJfJDo/edit?usp=sharing">Public Brand Guide</a> <br />
-              PayPal: <a target="_blank" href="https://paypal.me/LineageOS">paypal.me/LineageOS</a> <br />
-              Patreon: <a target="_blank" href="https://patreon.com/LineageOS">patreon.com/LineageOS</a> <br />
-              Note: LineageOS LLC is not a 501(c)(3) non-profit, as such donations are not tax-exempt.
+              <b>&copy; 2020 Contributors to the Flood project </b><br />
+              Check out our <a target="_blank" href="https://github.com/jesec/flood">Github repository</a> <br />
             </p>
           </div>
           <div class="col-md">
