@@ -40,15 +40,13 @@
 
 // Make the table scrollable horizontally on small screens
 @include media-breakpoint-down(xs) {
-
-    .table {
-        border-spacing: 0px;
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
+  .table {
+    border-spacing: 0px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
-
 
 //
 // Condensed table w/ half padding
@@ -60,7 +58,6 @@
     padding: $table-cell-padding-sm;
   }
 }
-
 
 // Bordered version
 //
@@ -82,7 +79,6 @@
   }
 }
 
-
 // Zebra-striping
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
@@ -92,7 +88,6 @@
     background-color: $table-accent-bg;
   }
 }
-
 
 // Hover effect
 //
@@ -106,7 +101,6 @@
   }
 }
 
-
 // Table backgrounds
 //
 // Exact selectors below required to override `.table-striped` and prevent
@@ -117,7 +111,6 @@
 }
 
 @include table-row-variant(active, $table-active-bg);
-
 
 // Dark styles
 //
@@ -170,7 +163,6 @@
     }
   }
 }
-
 
 // Responsive tables
 //

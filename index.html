@@ -6,16 +6,27 @@ scrolljs: true
 <div class="jumbotron welcome">
   <div class="container">
     <div class="row justify-content-between align-items-bottom">
-      <div class="col-lg-5 text-center text-lg-left pb-10" style="align-self: center;">
-
+      <div
+        class="col-lg-5 text-center text-lg-left pb-10"
+        style="align-self: center"
+      >
         <h1>{{ site.name }}</h1>
         <p>A beautiful web UI for various torrent clients.</p>
-        <a class="btn btn-primary text-primary" href="https://www.npmjs.com/flood">
-          {% include svg/download.svg %} Download</a>
-        <a class="btn btn-link text-white" href="{{ site.baseurl }}/blog">Blog</a>
-
+        <a
+          class="btn btn-primary text-primary"
+          href="https://www.npmjs.com/flood"
+        >
+          {% include svg/download.svg %} Download</a
+        >
+        <a class="btn btn-link text-white" href="{{ site.baseurl }}/blog"
+          >Blog</a
+        >
       </div>
-      <img alt="Home" src="assets/img/screenshot-desktop-expanded-dark.png" class="welcome-image">
+      <img
+        alt="Home"
+        src="assets/img/screenshot-desktop-expanded-dark.png"
+        class="welcome-image"
+      />
     </div>
   </div>
 </div>
@@ -27,10 +38,17 @@ scrolljs: true
         <h2>Latest news</h2>
 
         {% for post in site.categories.blog limit:1 %}
-        <h3><a class="fg-primary-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+        <h3>
+          <a class="fg-primary-dark" href="{{ site.baseurl }}{{ post.url }}"
+            >{{ post.title }}</a
+          >
+        </h3>
         <h6>{{ post.excerpt }}</h6>
-        <p>{% include svg/clock.svg %} {{ post.date | date: '%B %d, %Y' }}{% if post.author %}
-          {% include svg/author.svg %} {{ post.author }}{% endif %}</p>
+        <p>
+          {% include svg/clock.svg %} {{ post.date | date: '%B %d, %Y' }}{% if
+          post.author %} {% include svg/author.svg %} {{ post.author }}{% endif
+          %}
+        </p>
         {% endfor %}
       </div>
     </div>
@@ -40,18 +58,21 @@ scrolljs: true
 <section class="tweaks">
   <div class="container">
     <div class="row justify-content-between align-items-center">
-
       <div class="col-lg-6">
-        <img alt="Screenshot mobile" src="assets/img/screenshot-mobile-expanded-dark.jpg" class="img-fluid text-center">
+        <img
+          alt="Screenshot mobile"
+          src="assets/img/screenshot-mobile-expanded-dark.jpg"
+          class="img-fluid text-center"
+        />
       </div>
 
       <div class="col-lg-5 text-center text-lg-left">
         <h2>Touch-Ready</h2>
         <p class="feature">
           Flood supports touch screen devices.
-          <br><br>
+          <br /><br />
           Responsive. Collapsible sidebar.
-          <br><br>
+          <br /><br />
           Smooth, awesome experience on any device.
         </p>
       </div>
@@ -62,31 +83,32 @@ scrolljs: true
 <section class="tools bg-dark section-background-image parallax">
   <div class="container">
     <div class="row justify-content-between align-items-center">
-
       <div class="col-lg-4 text-center text-lg-left text-white">
         <h2>Localization</h2>
         <p class="feature">
           20+ languages are supported.
-          <br><br>
-          Flood detects your browser language preferences and automatically switches to your preferred language.
-          <br><br>
+          <br /><br />
+          Flood detects your browser language preferences and automatically
+          switches to your preferred language.
+          <br /><br />
           And, of course, you can still tell Flood to use a specific language.
-          <br><br>
-          Thanks to the integration with renowned translation management system <a
-            href="https://crwd.in/flood">Crowdin</a>, it is easier than ever to <a
-            href="https://crwd.in/flood">contribute your translations to Flood</a>.
+          <br /><br />
+          Thanks to the integration with renowned translation management system
+          <a href="https://crwd.in/flood">Crowdin</a>, it is easier than ever to
+          <a href="https://crwd.in/flood"
+            >contribute your translations to Flood</a
+          >.
         </p>
       </div>
-
     </div>
   </div>
 </section>
 
-<section class="download bg-primary" style="margin-bottom: -3rem;">
+<section class="download bg-primary" style="margin-bottom: -3rem">
   <div class="container">
     <div class="text-center">
       <div class="logo">
-        <img alt="Logo" src="assets/img/logo.png" class="download-logo-image">
+        <img alt="Logo" src="assets/img/logo.png" class="download-logo-image" />
       </div>
       <h2>Ready? Get Flood now!</h2>
       <a class="btn btn-primary" href="https://www.npmjs.com/flood">
