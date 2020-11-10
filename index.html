@@ -9,7 +9,7 @@ scrolljs: true
       <div class="col-lg-5 text-center text-lg-left pb-10" style="align-self: center;">
 
         <h1>{{ site.description }}</h1>
-        <p>A beautiful web UI for rTorrent.</p>
+        <p>A beautiful web UI for various torrent clients.</p>
         <a class="btn btn-primary text-primary" href="https://www.npmjs.com/flood">
           {% include svg/download.svg %} Download</a>
         <a class="btn btn-link text-white" href="{{ site.baseurl }}/blog">Blog</a>
@@ -29,7 +29,8 @@ scrolljs: true
         {% for post in site.categories.blog limit:1 %}
         <h3><a class="fg-primary-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         <h6>{{ post.excerpt }}</h6>
-        <p>{% include svg/clock.svg %} {{ post.date | date: '%B %d, %Y' }}{% if post.author %} {% include svg/author.svg %} {{ post.author }}{% endif %}</p>
+        <p>{% include svg/clock.svg %} {{ post.date | date: '%B %d, %Y' }}{% if post.author %}
+          {% include svg/author.svg %} {{ post.author }}{% endif %}</p>
         {% endfor %}
       </div>
     </div>
@@ -71,7 +72,9 @@ scrolljs: true
           <br><br>
           And, of course, you can still tell Flood to use a specific language.
           <br><br>
-          Thanks to the integration with renowned translation management system <a href="https://crwd.in/flood">Crowdin</a>, it is easier than ever to <a href="https://crwd.in/flood">contribute your translations to Flood</a>.
+          Thanks to the integration with renowned translation management system <a
+            href="https://crwd.in/flood">Crowdin</a>, it is easier than ever to <a
+            href="https://crwd.in/flood">contribute your translations to Flood</a>.
         </p>
       </div>
 
