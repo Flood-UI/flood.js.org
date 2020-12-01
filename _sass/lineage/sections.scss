@@ -42,6 +42,18 @@ section.download .logo img {
   width: auto;
 }
 
+.light {
+  .img-dark {
+    display: none;
+  }
+}
+
+.dark {
+  .img-light {
+    display: none;
+  }
+}
+
 img#rotate-on-scroll {
   position: absolute;
   right: 0;

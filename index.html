@@ -6,27 +6,14 @@ scrolljs: true
 <div class="jumbotron welcome">
   <div class="container">
     <div class="row justify-content-between align-items-bottom">
-      <div
-        class="col-lg-5 text-center text-lg-left pb-10"
-        style="align-self: center"
-      >
+      <div class="col-lg-5 text-center text-lg-left pb-10" style="align-self: center">
         <h1>{{ site.name }}</h1>
         <p>A beautiful web UI for various torrent clients.</p>
-        <a
-          class="btn btn-primary text-primary"
-          href="https://www.npmjs.com/flood"
-        >
-          {% include svg/download.svg %} Download</a
-        >
-        <a class="btn btn-link text-white" href="{{ site.baseurl }}/blog"
-          >Blog</a
-        >
+        <a class="btn btn-primary text-primary" href="https://www.npmjs.com/flood">
+          {% include svg/download.svg %} Download</a>
+        <a class="btn btn-link text-white" href="{{ site.baseurl }}/blog">Blog</a>
       </div>
-      <img
-        alt="Home"
-        src="assets/img/screenshot-desktop-expanded-dark.png"
-        class="welcome-image"
-      />
+      <img alt="Home" src="assets/img/screenshot-desktop-expanded-dark.png" class="welcome-image" />
     </div>
   </div>
 </div>
@@ -39,9 +26,7 @@ scrolljs: true
 
         {% for post in site.categories.blog limit:1 %}
         <h3>
-          <a class="fg-primary-dark" href="{{ site.baseurl }}{{ post.url }}"
-            >{{ post.title }}</a
-          >
+          <a class="fg-primary-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h3>
         <h6>{{ post.excerpt }}</h6>
         <p>
@@ -59,11 +44,8 @@ scrolljs: true
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6">
-        <img
-          alt="Screenshot mobile"
-          src="assets/img/screenshot-mobile-expanded-dark.jpg"
-          class="img-fluid text-center"
-        />
+        <img alt="Screenshot mobile" src="assets/img/screenshot-mobile-expanded-dark.jpg"
+          class="img-fluid text-center" />
       </div>
 
       <div class="col-lg-5 text-center text-lg-left">
@@ -76,6 +58,46 @@ scrolljs: true
           Smooth, awesome experience on any device.
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="theme bg-dark">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+
+      <div id="theme-img" class="col-lg-7 order-lg-last light">
+        <br /><br />
+        <img alt="theme" src="assets/img/screenshot-desktop-expanded-light.png" class="img-fluid img-light text-center"
+          style="max-height: 640px;">
+        <img alt="theme" src="assets/img/screenshot-desktop-expanded-dark-2.png" class="img-fluid img-dark text-center"
+          style="max-height: 640px;">
+        <script type="text/javascript">
+          function swapImage() {
+            const themeImgDivElement = document.getElementById("theme-img");
+            if (themeImgDivElement.className.endsWith('light')) {
+              themeImgDivElement.className = themeImgDivElement.className.replace('light', 'dark')
+            } else {
+              themeImgDivElement.className = themeImgDivElement.className.replace('dark', 'light')
+            }
+          }
+          setInterval(() => { swapImage() }, 1200)
+        </script>
+        <br /><br />
+      </div>
+
+      <div class="col-lg-4 text-center text-lg-left text-white">
+        <h2>Light and Dark</h2>
+        <p class="feature">
+          Both light and dark color schemes are supported.
+          <br /><br />
+          By default, Flood follows the theme of your system.
+          <br /><br />
+          Or, switch to your favorite theme at the click of a button.
+          <br /><br />
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -95,9 +117,7 @@ scrolljs: true
           <br /><br />
           Thanks to the integration with renowned translation management system
           <a href="https://crwd.in/flood">Crowdin</a>, it is easier than ever to
-          <a href="https://crwd.in/flood"
-            >contribute your translations to Flood</a
-          >.
+          <a href="https://crwd.in/flood">contribute your translations to Flood</a>.
         </p>
       </div>
     </div>
